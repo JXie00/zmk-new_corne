@@ -110,5 +110,29 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
+        layer_4 {
+            display-name = "SYMBOLS";
+            bindings = 
+                // Empty bindings, nothing defined
+            >;
+            sensor-bindings = <&scroll_encoder>;
+
+        };
+
+    layer_5 {
+            display-name = "SYMB";
+            bindings = 
+                // Empty bindings, nothing defined
+            >;
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+    layer_6 {
+            display-name = "test";
+            bindings = 
+                // Empty bindings, nothing defined
+            >;
+            sensor-bindings = <&scroll_encoder>;
+        };
     };
 };
