@@ -33,7 +33,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
         td0: td0 {
@@ -67,7 +67,7 @@
 &kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B                               &kp UP                &kp J        &kp L  &kp U      &kp Y    &kp SEMI     &kp BSPC
 &td0       &hm LGUI A  &hm LALT R  &hm LCTRL S     &hm LSHIFT T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &hm RSHIFT N  &hm RCTRL E      &hm RALT I    &hm RGUI O  &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+                         &kp ESC  &lt 1 DEL  &lt 3 ESC                                                &lt 3 ENTER  &lt 2 SPACE  &kp TAB
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -111,11 +111,27 @@
             sensor-bindings = <&scroll_encoder>;
         };
         layer_4 {
-            status = "reserved";
+            display-name = "Tsymbols";
+            bindings = <
+&kp GRAVE  &kp LBKT     &kp LPAR     &kp RPAR       &kp RBKT     &kp DOT                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&none          &kp AMPS      &kp APOS  &kp DQT   &kp PLUS  &none             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans          &none  &none     &none  &none     &kp none  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
 
     layer_5 {
-                status = "reserved";
+            display-name = "Bsymbols";
+
+                           bindings = <
+&kp EXCL  &kp COMMA     &kp LBRC     &kp RBRC       &kp SEMI     &kp QMARK                                 &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&kp NUHS         &kp CARET      &kp EQUAL  &kp UNDER   &kp DLLR  &kp ASTRK             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&kp  TILDE        &kp LT  &kp PIPE     &kp MINUS  &kp GT     &kp FSLH    &kp C_MUTE                     &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+            >;
+
         };
 
     layer_6 {
