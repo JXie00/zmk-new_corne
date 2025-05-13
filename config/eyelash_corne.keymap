@@ -122,9 +122,9 @@
         layer_4 {
             display-name = "Tsymbols";
             bindings = <
-&kp GRAVE  &kp LBKT     &kp LPAR     &kp RPAR       &kp RBKT     &kp DOT                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&none          &kp AMPS      &kp APOS  &kp DQT   &kp PLUS  &none             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &none  &none     &none  &none     &kp none  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+&kp GRAVE      &kp LBKT       &kp LPAR     &kp RPAR  &kp RBKT     &kp DOT                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&none          &kp AMPS       &kp APOS     &kp DQT   &kp PLUS     &none             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans         &none          &none        &none     &none        &none    &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                        &trans       &trans     &trans                                                                   &trans       &trans     &trans
             >;
 
@@ -135,9 +135,9 @@
             display-name = "Bsymbols";
 
                            bindings = <
-&kp EXCL  &kp COMMA     &kp LBRC     &kp RBRC       &kp SEMI     &kp QMARK                                 &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&kp NUHS         &kp CARET      &kp EQUAL  &kp UNDER   &kp DLLR  &kp ASTRK             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&kp  TILDE        &kp LT  &kp PIPE     &kp MINUS  &kp GT     &kp FSLH    &kp C_MUTE                     &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+&kp EXCL       &kp COMMA     &kp LBRC     &kp RBRC      &kp SEMI     &kp QMARK                                 &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&kp NUHS       &kp CARET     &kp EQUAL    &kp UNDER     &kp DLLR     &kp ASTRK             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&kp  TILDE     &kp LT        &kp PIPE     &kp MINUS     &kp GT       &kp FSLH    &kp C_MUTE                     &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                        &trans       &trans     &trans                                                                   &trans       &trans     &trans
             >;
 
