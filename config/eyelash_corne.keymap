@@ -26,6 +26,8 @@
     trigger-period-ms = <16>;
 };
 
+&soft_off { hold-time-ms = <2000>; };
+
 / {
     behaviors {
         hm: home_row_mods {
@@ -58,6 +60,15 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        softoff {
+            bindings = <&soft_off>;
+            key-positions = <1 15 29>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -70,9 +81,7 @@
                          &kp ESC  &lt 1 DEL  &lt 3 ESC                                                &lt 3 ENTER  &lt 2 SPACE  &kp TAB
             >;
 
-            // sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-
-            sensor-bindings = <&inc_dec_kp N2 N1>;
+             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
